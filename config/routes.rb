@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   get 'welcome/index' #add 05/31/2016
   root 'welcome#index' 
 
-
+get 'informations' => 'informations#index'
 
 
 
