@@ -1,11 +1,13 @@
 Rails.application.routes.draw do
 
 
+devise_for :users, controllers: {registrations: "registrations", sessions: "sessions"}
 
   get 'welcome/index' #add 05/31/2016
   root 'welcome#index' 
 
 get 'informations' => 'informations#index'
+
 
 
 
